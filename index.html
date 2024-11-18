@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time And Day</title>
+</head>
+<body>
+
+<h3> Clicking the button below will display time-based greetings
+
+</h3>
+
+<button onclick="myFunc()"> Let's Try </button>
+
+<p id="test"></p>
+
+<script>
+function myFunc() {
+    var hour = new Date().getHours();
+    var text;
+    if (hour < 18) {
+        text = "Good Day";
+    } else {
+        text = "Good Evening";
+    }
+   
+    
+    document.getElementById("test").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
